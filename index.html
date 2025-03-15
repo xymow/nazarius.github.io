@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        .container { max-width: 600px; margin: auto; }
+        .hidden { display: none; }
+        .lang-btn { margin: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="name">John Doe</h1>
+
+        <p id="desc-en">Welcome to my portfolio! I'm a professional based in Frankfurt.</p>
+        <p id="desc-de" class="hidden">Willkommen in meinem Portfolio! Ich bin ein Profi mit Sitz in Frankfurt.</p>
+        <p id="desc-ru" class="hidden">Добро пожаловать в мое портфолио! Я профессионал из Франкфурта.</p>
+        <p id="desc-ua" class="hidden">Ласкаво просимо до мого портфоліо! Я професіонал із Франкфурта.</p>
+
+        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+
+        <div>
+            <button class="lang-btn" onclick="switchLang('en')">English</button>
+            <button class="lang-btn" onclick="switchLang('de')">Deutsch</button>
+            <button class="lang-btn" onclick="switchLang('ru')">Русский</button>
+            <button class="lang-btn" onclick="switchLang('ua')">Українська</button>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.container p').forEach(el => el.classList.add('hidden'));
+            document.getElementById('desc-' + lang).classList.remove('hidden');
+        }
+    </script>
+
+</body>
+</html>
