@@ -3,27 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Nazarii Ivanytsia - Personal Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        .container { max-width: 600px; margin: auto; }
-        .hidden { display: none; }
-        .lang-btn { margin: 5px; cursor: pointer; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .lang-btn {
+            margin: 5px;
+            padding: 8px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .lang-btn:hover {
+            background-color: #45a049;
+        }
+        .hidden {
+            display: none;
+        }
+        section {
+            margin: 20px 0;
+        }
+        .contact-info, .social-links {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-info p, .social-links p {
+            margin: 5px 0;
+        }
+        .social-links a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+        .photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1 id="name">John Doe</h1>
+        <header>
+            <h1 id="name">Nazarii Ivanytsia</h1>
+            <img src="profile-photo.jpg" alt="Nazarii Ivanytsia" class="photo">
+        </header>
 
-        <p id="desc-en">Welcome to my portfolio! I'm a professional based in Frankfurt.</p>
-        <p id="desc-de" class="hidden">Willkommen in meinem Portfolio! Ich bin ein Profi mit Sitz in Frankfurt.</p>
-        <p id="desc-ru" class="hidden">Добро пожаловать в мое портфолио! Я профессионал из Франкфурта.</p>
-        <p id="desc-ua" class="hidden">Ласкаво просимо до мого портфоліо! Я професіонал із Франкфурта.</p>
+        <section id="about">
+            <h2>About Me</h2>
+            <p id="bio-en">I am a Ukrainian refugee from Kyiv, living in Frankfurt since April 2022. I am 18 years old and speak four languages: Ukrainian, Russian, German (B1), and English (B1). I am passionate about programming, photography, philology, cooking, and an active lifestyle.</p>
+            <p id="bio-de" class="hidden">Ich bin ein ukrainischer Flüchtling aus Kiew, lebe seit April 2022 in Frankfurt. Ich bin 18 Jahre alt und spreche vier Sprachen: Ukrainisch, Russisch, Deutsch (B1) und Englisch (B1). Ich interessiere mich für Programmierung, Fotografie, Philologie, Kochen und einen aktiven Lebensstil.</p>
+            <p id="bio-ru" class="hidden">Я украинский беженец из Киева, живу во Франкфурте с апреля 2022 года. Мне 18 лет, я владею четырьмя языками: украинским, русским, немецким (B1) и английским (B1). Я увлекаюсь программированием, фотографией, филологией, кулинарией и активным образом жизни.</p>
+            <p id="bio-ua" class="hidden">Я український біженець з Києва, живу у Франкфурті з квітня 2022 року. Мені 18 років, я володію чотирма мовами: українською, російською, німецькою (B1) та англійською (B1). Мені подобається програмування, фотографія, філологія, кулінарія та активний спосіб життя.</p>
+        </section>
 
-        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        <section id="skills">
+            <h2>Skills and Interests</h2>
+            <p id="skills-en">Languages: German (B1), English (B1), Russian (fluent), Ukrainian (fluent). Technical skills: Programming (Python), basic web development (HTML, CSS, JavaScript). Photography (Canon 650D, photo editing).</p>
+            <p id="skills-de" class="hidden">Sprachen: Deutsch (B1), Englisch (B1), Russisch (fließend), Ukrainisch (fließend). Technische Fähigkeiten: Programmierung (Python), Grundkenntnisse in Webentwicklung (HTML, CSS, JavaScript). Fotografie (Canon 650D, Fotobearbeitung).</p>
+            <p id="skills-ru" class="hidden">Языки: немецкий (B1), английский (B1), русский (свободно), украинский (свободно). Технические навыки: Программирование (Python), основы веб-разработки (HTML, CSS, JavaScript). Фотография (Canon 650D, обработка фотографий).</p>
+            <p id="skills-ua" class="hidden">Мови: німецька (B1), англійська (B1), російська (вільно), українська (вільно). Технічні навички: Програмування (Python), базові знання веб-розробки (HTML, CSS, JavaScript). Фотографія (Canon 650D, обробка фото).</p>
+        </section>
 
-        <div>
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <ul>
+                <li id="praktikum-en">Kindergarten internship (part of German school program): Child care and activity organization.</li>
+                <li id="praktikum-de" class="hidden">Praktikum im Kindergarten (Teil der deutschen Schulpflicht): Betreuung und Organisation von Aktivitäten.</li>
+                <li id="praktikum-ru" class="hidden">Стажировка в детском саду (часть немецкой школьной программы): Уход за детьми и организация мероприятий.</li>
+                <li id="praktikum-ua" class="hidden">Стажування в дитячому садку (частина німецької шкільної програми): Догляд за дітьми та організація заходів.</li>
+
+                <li id="bau-en">Construction site internship (part of German school program): Experience in construction, teamwork, and safety protocols.</li>
+                <li id="bau-de" class="hidden">Praktikum auf der Baustelle (Teil der deutschen Schulpflicht): Einblicke in die Bauwirtschaft, Teamarbeit und Sicherheitsvorschriften.</li>
+                <li id="bau-ru" class="hidden">Стажировка на стройке (часть немецкой школьной программы): Знакомство со строительством, командная работа и соблюдение техники безопасности.</li>
+                <li id="bau-ua" class="hidden">Стажування на будівництві (частина німецької шкільної програми): Ознайомлення з будівельними роботами, командна робота та дотримання техніки безпеки.</li>
+
+                <li id="land-en">Agricultural internship (Hamburg, part of German school program): Assistance in farming tasks, plant care, and harvesting.</li>
+                <li id="land-de" class="hidden">Praktikum in der Landwirtschaft (Hamburg, Teil der deutschen Schulpflicht): Unterstützung bei landwirtschaftlichen Aufgaben, Pflege von Pflanzen und Ernte.</li>
+                <li id="land-ru" class="hidden">Стажировка в сельском хозяйстве (Гамбург, часть немецкой школьной программы): Помощь в сельскохозяйственных работах, уход за растениями и сбор урожая.</li>
+                <li id="land-ua" class="hidden">Стажування в сільському господарстві (Гамбург, частина німецької шкільної програми): Допомога в сільськогосподарських роботах, догляд за рослинами та збирання врожаю.</li>
+
+                <li id="lager-en">Part-time warehouse work (privately): Stock management, picking and packing goods, assisting with logistics and inventory control.</li>
+                <li id="lager-de" class="hidden">Teilzeitarbeit im Lager (privat): Lagerverwaltung, Kommissionierung und Verpackung von Waren, Unterstützung bei der logistischen Organisation und Bestandskontrolle.</li>
+                <li id="lager-ru" class="hidden">Частичная работа на складе (лично): Управление запасами, комплектование и упаковка товаров, помощь в логистике и контроле инвентаря.</li>
+                <li id="lager-ua" class="hidden">Часткова робота на складі (особисто): Управління запасами, комплектування та пакування товарів, допомога в логістиці та контролі інвентарю.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:hrajpole@gmail.com">hrajpole@gmail.com</a></p>
+                <p>Phone: <a href="tel:+4916095842436">+49 160 95842436</a></p>
+            </div>
+            <div class="social-links">
+                <p><a href="https://linkedin.com/in/nazariiivanytsia">LinkedIn</a></p>
+                <p><a href="https://github.com/xymow">GitHub</a></p>
+            </div>
+        </section>
+
+        <div class="language-switch">
             <button class="lang-btn" onclick="switchLang('en')">English</button>
             <button class="lang-btn" onclick="switchLang('de')">Deutsch</button>
             <button class="lang-btn" onclick="switchLang('ru')">Русский</button>
@@ -34,9 +130,10 @@
     <script>
         function switchLang(lang) {
             document.querySelectorAll('.container p').forEach(el => el.classList.add('hidden'));
-            document.getElementById('desc-' + lang).classList.remove('hidden');
+            document.querySelectorAll('.container ul li').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.container h2').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('#' + lang + '-en').forEach(el => el.classList.remove('hidden'));
         }
     </script>
-
 </body>
 </html>
